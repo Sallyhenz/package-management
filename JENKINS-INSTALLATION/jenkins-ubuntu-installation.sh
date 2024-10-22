@@ -12,3 +12,6 @@ echo "deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc]" \
   /etc/apt/sources.list.d/jenkins.list > /dev/null
 sudo apt-get update
 sudo apt-get install jenkins
+sudo systemctl daemon-reload  # To Register the Jenkins service 
+sudo systemctl start jenkins
+systemctl status jenkins
